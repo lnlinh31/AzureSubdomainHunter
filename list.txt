@@ -1,0 +1,7 @@
+azure.com
+linkedin.com
+lg.com
+adobe.com
+intel.com
+msi.com
+centurylink.com
