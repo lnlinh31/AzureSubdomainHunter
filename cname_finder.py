@@ -61,7 +61,7 @@ def Check(domain):
 				cname_string = str(data.target).rstrip(".")
 				#cname_error = to_text(answer.response.rcode()).lower()
 				print("{0:30}{1} -->\t {2}{3}".format(domain, Fore.LIGHTBLUE_EX, Fore.RESET, cname_string))
-				x = re.search(".trafficmanager.net$",cname_string)
+				x = re.search("[.]trafficmanager[.]net$",cname_string)
 				if x:
 					list_cnam.append(cname_string[0:-19])
 
