@@ -15,7 +15,7 @@ while read target; do
 	python3 cname_finder.py $target".txt"
 	echo "[+]--------------------------------------------          Checking for availability         -------------------------------------------------------------!"
 	while read line; do 
-	az network traffic-manager profile check-dns -n $line | grep 'true' >nul 2>&1 && (echo "$line -->  Can be taked" | sed -e :a -e 's/^.\{1,60\}$/-&/;ta')|| (echo "$line -->  Faild" | sed -e :a -e 's/^.\{1,60\}$/-&/;ta') ; 
+	az network traffic-manager profile check-dns -n $line | grep 'true' >nul 2>&1 && (echo "$line -->  Can be taked" | sed -e :a -e 's/^.\{1,60\}$/-&/;ta')|| (echo "$line -->  Failed" | sed -e :a -e 's/^.\{1,60\}$/-&/;ta') ; 
 
 	done < "cname."$target".txt"
 
