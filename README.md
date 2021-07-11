@@ -10,5 +10,4 @@ Enter target domains in list.txt file,
 Run: ./AzureSubdomainHunter.sh for automatic attack
 
 # Ref 
-https://github.com/melbadry9/cname,
 https://github.com/projectdiscovery/subfinder
